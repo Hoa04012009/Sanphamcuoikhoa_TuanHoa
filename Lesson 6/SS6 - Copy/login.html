@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/auth.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <!-- Thêm phần này vào ngay sau thẻ <body> trong cả hai file -->
+<div class="navbar">
+  <a href="./index.html" class="logo">
+    <span>Poco<span style="color: var(--red)">Poco</span> Tea</span>
+  </a>
+  
+  <div class="nav-menu">
+    <ul class="menu-list">
+      <li><a href="./index.html">TRANG CHỦ</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">THỰC ĐƠN <i class="fa-solid fa-caret-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">TRÀ SỮA</a></li>
+          <li><a href="#">TRÀ TRÁI CÂY</a></li>
+          <li><a href="#">ĐỒ ĂN VẶT</a></li>
+          <li><a href="#">TOPPING</a></li>
+        </ul>
+      </li>
+      <li><a href="#">KHUYẾN MÃI</a></li>
+      <li><a href="#">CỬA HÀNG</a></li>
+      <li><a href="#">LIÊN HỆ</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <div class="search-box">
+      <input type="text" placeholder="Tìm kiếm sản phẩm...">
+      <a href="./search.html">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+    </div>
+    <div class="cart-icon">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span class="cart-count">0</span>
+    </div>
+    <div class="auth-buttons">
+      <a href="./login.html" class="login-btn">
+          <i class="fa-solid fa-user"></i>
+          Đăng nhập
+      </a>
+      <a href="./register.html" class="register-btn">
+          <i class="fa-solid fa-user-plus"></i>
+          Đăng ký
+      </a>
+    </div>
+  </div>
+</div>
+    <div class="form-wrapper">
+      <h2>Sign In</h2>
+      <form action="#">
+        <div class="form-control">
+          <input id="username" type="text" required />
+          <label>Username</label>
+        </div>
+        <div class="form-control">
+          <input id="password" type="password" required />
+          <label>Password</label>
+        </div>
+        <button type="submit" id="signin">Sign In</button>
+        <div class="form-help">
+          <div class="remember-me">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Remember me</label>
+          </div>
+          <a href="#">Need help?</a>
+        </div>
+      </form>
+      <p>New to TRASUA? <a href="./register.html">Sign up now</a></p>
+    </div>
+
+    <script src="./js/login.js"></script>
+  </body>
+</html>
