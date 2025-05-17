@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <!-- Google tag (gtag.js) -->
@@ -8,14 +8,17 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-VNJX66Z0YF');
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MindX Cinema</title>
+  <meta name="description" content="PocoPoco Tea - Thưởng thức hương vị trà sữa tuyệt vời với những công thức độc đáo" />
+  <meta name="keywords" content="trà sữa, pocopoco, trà đào, matcha, cookie đá xay" />
+  <meta name="author" content="PocoPoco Tea" />
+  <title>PocoPoco Tea - Trà sữa & Đồ ăn vặt</title>
   <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="apple-touch-icon" href="./assets/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <!-- Google Fonts Link For Icons -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -29,206 +32,181 @@
 </head>
 
 <body>
-
-  <!-- <div class="backdrop">
-    <img src="./assets/loading.svg" alt="" />
-  </div> -->
-
+  <div class="backdrop">
+    <div class="loader"></div>
+  </div>
 
   <div class="navbar">
     <a href="./index.html" class="logo">
+      
       <span>Poco<span style="color: var(--red)">Poco</span> Tea</span>
     </a>
     
     <div class="nav-menu">
       <ul class="menu-list">
-        <li><a href="./index.html" class="active">TRANG CHỦ</a></li>
+        <li><a href="./index.html">Trang chủ</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle">THỰC ĐƠN <i class="fa-solid fa-caret-down"></i></a>
+          <a href="#">Menu</a>
           <ul class="dropdown-menu">
-            <li><a href="#">TRÀ SỮA</a></li>
-            <li><a href="#">TRÀ TRÁI CÂY</a></li>
-            <li><a href="#">ĐỒ ĂN VẶT</a></li>
-            <li><a href="#">TOPPING</a></li>
+            <li><a href="#">Trà sữa</a></li>
+            <li><a href="#">Trà trái cây</a></li>
+            <li><a href="#">Đồ ăn vặt</a></li>
+            <li><a href="#">Topping</a></li>
           </ul>
         </li>
-        <li><a href="#">KHUYẾN MÃI</a></li>
-        <li><a href="#">CỬA HÀNG</a></li>
-        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="#">Về chúng tôi</a></li>
+        <li><a href="#">Liên hệ</a></li>
       </ul>
     </div>
 
     <div class="nav-right">
       <div class="search-box">
-        <input type="text" placeholder="Tìm kiếm sản phẩm...">
-        <a href="./search.html">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </a>
+        <input type="text" placeholder="Tìm kiếm..." />
+        <a href="#"><i class="fa-solid fa-search"></i></a>
       </div>
-      <div class="cart-icon">
+      <div class="cart-icon" id="cartIcon">
         <i class="fa-solid fa-cart-shopping"></i>
         <span class="cart-count">0</span>
       </div>
       <div class="auth-buttons">
-        <a href="./login.html" class="login-btn">
-          <i class="fa-solid fa-user"></i>
-          Đăng nhập
-        </a>
-        <a href="./register.html" class="register-btn">
-          <i class="fa-solid fa-user-plus"></i>
-          Đăng ký
-        </a>
+        <a href="./login.html" class="login-btn">Đăng nhập</a>
+        <a href="./register.html" class="register-btn">Đăng ký</a>
       </div>
+      <button class="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
   </div>
-  <div class="hero-section">
-    <!-- Thêm container cho bong bóng -->
+
+  <section class="hero-section">
     <div class="bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
     </div>
-    
     <div class="hero-content">
-      <h1>Thưởng thức hương vị tuyệt vời</h1>
-      <p>Khám phá thế giới trà sữa đa dạng với những công thức độc đáo</p>
-      <a href="#menu" class="btn order-now">
-        <i class="fa-solid fa-cup-straw"></i>
-        Đặt hàng ngay
+      <h1>PocoPoco Tea</h1>
+      <p>Khám phá hương vị trà sữa độc đáo và đồ ăn vặt hấp dẫn</p>
+      <a href="#menu" class="btn">
+        <i class="fa-solid fa-utensils"></i>
+        Xem menu
       </a>
     </div>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <h2>Menu của chúng tôi</h2>
+    <div class="category-tabs">
+      <button class="tab-btn active" data-category="all">Tất cả</button>
+      <button class="tab-btn" data-category="trasua">Trà sữa</button>
+      <button class="tab-btn" data-category="tratraicay">Trà trái cây</button>
+      <button class="tab-btn" data-category="doanvat">Đồ ăn vặt</button>
+    </div>
+    <div class="product-grid">
+      <!-- Products will be rendered here by JavaScript -->
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-item">
+      <i class="fa-solid fa-truck"></i>
+      <h3>Giao hàng nhanh chóng</h3>
+      <p>Giao hàng trong vòng 30 phút</p>
+    </div>
+    <div class="feature-item">
+      <i class="fa-solid fa-medal"></i>
+      <h3>Chất lượng cao</h3>
+      <p>Nguyên liệu tươi mới mỗi ngày</p>
+    </div>
+    <div class="feature-item">
+      <i class="fa-solid fa-headset"></i>
+      <h3>Hỗ trợ 24/7</h3>
+      <p>Luôn sẵn sàng phục vụ bạn</p>
+    </div>
+  </section>
+
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Giỏ hàng</h3>
+      <button class="close-cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be rendered here by JavaScript -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Tổng cộng:</span>
+        <span class="total-amount">0đ</span>
+      </div>
+      <button class="checkout-btn">Thanh toán</button>
+    </div>
   </div>
 
-  
-  <main>
-    <section id="menu" class="menu-section">
-      <h2>MENU NỔI BẬT</h2>
-      <div class="product-grid">
-        <!-- Sản phẩm 1 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="./assets/trasua1.jpg" alt="Trà sữa trân châu">
-            <div class="product-tag">Best Seller</div>
-          </div>
-          <div class="product-info">
-            <h3>Trà sữa trân châu</h3>
-            <p class="product-description">Trà sữa thơm béo kết hợp với trân châu đen dẻo dai</p>
-            <div class="product-bottom">
-              <span class="price">45.000đ</span>
-              <button class="add-to-cart">
-                <i class="fa-solid fa-cart-plus"></i>
-                Thêm vào giỏ
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sản phẩm 2 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="./assets/trasua2.jpg" alt="Trà đào">
-            <div class="product-tag">Hot</div>
-          </div>
-          <div class="product-info">
-            <h3>Trà đào cam sả</h3>
-            <p class="product-description">Trà đào thơm ngát kết hợp với cam và sả tươi mát</p>
-            <div class="product-bottom">
-              <span class="price">40.000đ</span>
-              <button class="add-to-cart">
-                <i class="fa-solid fa-cart-plus"></i>
-                Thêm vào giỏ
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sản phẩm 3 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="./assets/trasua3.jpg" alt="Matcha đá xay">
-            <div class="product-tag">New</div>
-          </div>
-          <div class="product-info">
-            <h3>Matcha đá xay</h3>
-            <p class="product-description">Matcha Nhật Bản xay với sữa tươi và kem tươi</p>
-            <div class="product-bottom">
-              <span class="price">55.000đ</span>
-              <button class="add-to-cart">
-                <i class="fa-solid fa-cart-plus"></i>
-                Thêm vào giỏ
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sản phẩm 4 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="./assets/trasua4.jpg" alt="Cookie đá xay">
-            <div class="product-tag">Popular</div>
-          </div>
-          <div class="product-info">
-            <h3>Cookie đá xay</h3>
-            <p class="product-description">Bánh cookie xay với sữa tươi và kem tươi béo ngậy</p>
-            <div class="product-bottom">
-              <span class="price">50.000đ</span>
-              <button class="add-to-cart">
-                <i class="fa-solid fa-cart-plus"></i>
-                Thêm vào giỏ
-              </button>
-            </div>
-          </div>
-        </div>
+  <div class="quick-view-modal" id="quickViewModal">
+    <div class="modal-content">
+      <button class="close-modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body">
+        <!-- Quick view content will be rendered here by JavaScript -->
       </div>
-    </section>
-
-    <section class="features">
-      <div class="feature-item">
-        <i class="fa-solid fa-truck-fast"></i>
-        <h3>Giao hàng nhanh</h3>
-        <p>Miễn phí giao hàng trong bán kính 5km</p>
-      </div>
-      <div class="feature-item">
-        <i class="fa-solid fa-medal"></i>
-        <h3>Chất lượng</h3>
-        <p>Nguyên liệu tươi ngon, an toàn</p>
-      </div>
-      <div class="feature-item">
-        <i class="fa-solid fa-gift"></i>
-        <h3>Ưu đãi</h3>
-        <p>Nhiều chương trình khuyến mãi hấp dẫn</p>
-      </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
   <footer>
-    <p>Copyright &copy; MindX School</p>
-    <div>
-      <p>Contact:</p>
-      <a target="_blank" rel="noopener noreferrer" href="#">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a target="_blank" rel="noopener noreferrer" href="#">
-        <i class="fa-brands fa-facebook"></i>
-      </a>
-      <a target="_blank" rel="noopener noreferrer" href="#">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Về chúng tôi</h4>
+        <ul>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Tin tức</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Hỗ trợ</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Liên hệ</h4>
+        <ul>
+          <li><a href="#">Hotline: 1900 1234</a></li>
+          <li><a href="#">Email: info@pocopoco.com</a></li>
+          <li><a href="#">Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Theo dõi chúng tôi</h4>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 PocoPoco Tea. All rights reserved.</p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script type="module" src="./scripts/config.js"></script>
-  <script type="module" src="./scripts/home.js"></script>
-  <script src="./java/register.js"></script>
+  <script type="module" src="./js/home.js"></script>
 </body>
 
 </html>
