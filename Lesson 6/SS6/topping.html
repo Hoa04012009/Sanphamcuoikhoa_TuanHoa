@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Trà Trái Cây - PocoPoco Tea</title>
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/tratraicay.css">
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="./index.html" class="logo">
+      <span>Poco<span style="color: var(--red)">Poco</span> Tea</span>
+    </a>
+    
+    <div class="nav-menu">
+      <ul class="menu-list">
+        <li><a href="./index.html">TRANG CHỦ</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">THỰC ĐƠN <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="trasua.html">TRÀ SỮA</a></li>
+            <li><a href="tratraicay.html">TRÀ TRÁI CÂY</a></li>
+            <li><a href="doanvat.html" class="active">ĐỒ ĂN VẶT</a></li>
+            <li><a href="topping.html">TOPPING</a></li>
+          </ul>
+        </li>
+        <li><a href="#">KHUYẾN MÃI</a></li>
+        <li><a href="#">CỬA HÀNG</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+        <a href="./search.html">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+      </div>
+      <div class="auth-buttons">
+        <a href="./login.html" class="login-btn">
+          <i class="fa-solid fa-user"></i>
+          Đăng nhập
+        </a>
+        <a href="./register.html" class="register-btn">
+          <i class="fa-solid fa-user-plus"></i>
+          Đăng ký
+        </a>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section id="menu" class="menu-section">
+        <h2>MENU TOPPING</h2>
+        <div class="product-grid">
+            <!-- Sản phẩm 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/trangchau.jpg" alt="Trân châu đen">
+                    <div class="product-tag">Best Seller</div>
+                </div>
+                <div class="product-info">
+                    <h3>Trân châu đen</h3>
+                    <p class="product-description">Trân châu đen dẻo dai, thơm ngon</p>
+                    <div class="product-bottom">
+                        <span class="price">10.000đ</span>
+                        <button class="add-to-cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/thach.jpg" alt="Thạch">
+                    <div class="product-tag">Hot</div>
+                </div>
+                <div class="product-info">
+                    <h3>Thạch</h3>
+                    <p class="product-description">Thạch nhiều vị, mềm mịn</p>
+                    <div class="product-bottom">
+                        <span class="price">8.000đ</span>
+                        <button class="add-to-cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/pudding.jpg" alt="Pudding">
+                    <div class="product-tag">New</div>
+                </div>
+                <div class="product-info">
+                    <h3>Pudding</h3>
+                    <p class="product-description">Pudding trứng mềm mịn, béo ngậy</p>
+                    <div class="product-bottom">
+                        <span class="price">12.000đ</span>
+                        <button class="add-to-cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/cream.jpg" alt="Cream">
+                    <div class="product-tag">Popular</div>
+                </div>
+                <div class="product-info">
+                    <h3>Cream</h3>
+                    <p class="product-description">Kem tươi béo ngậy</p>
+                    <div class="product-bottom">
+                        <span class="price">15.000đ</span>
+                        <button class="add-to-cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Giao hàng nhanh</h3>
+            <p>Miễn phí giao hàng trong bán kính 5km</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-medal"></i>
+            <h3>Chất lượng</h3>
+            <p>Nguyên liệu tươi ngon, an toàn</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-gift"></i>
+            <h3>Ưu đãi</h3>
+            <p>Nhiều chương trình khuyến mãi hấp dẫn</p>
+        </div>
+    </section>
+</main>
+
+  <footer>
+    <p>Copyright &copy; MindX School</p>
+    <div>
+      <p>Contact:</p>
+      <a target="_blank" rel="noopener noreferrer" href="#">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a target="_blank" rel="noopener noreferrer" href="#">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a target="_blank" rel="noopener noreferrer" href="#">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

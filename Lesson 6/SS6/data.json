@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Trà sữa trân châu",
+        "description": "Trà sữa trân châu là một trong những thức uống phổ biến nhất tại PocoPoco Tea. Với hương vị trà thơm ngát kết hợp cùng sữa tươi béo ngậy và trân châu đen dẻo dai, đây là lựa chọn hoàn hảo cho những người yêu thích trà sữa truyền thống.",
+        "short_description":"Trà sữa trân châu là một trong những thức uống phổ biến nhất tại PocoPoco Tea.",
+        "price":45000 ,
+        "popular": "Best seller ",
+        "size": {
+            "M":45000 ,
+            "L": 50000
+        },
+        "Ingredient": ["Trà đen hảo hạng", "Sữa tươi","Trân châu đen","Đường","Kem béo"],
+        "image": "./assets/download.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Trà đào cam sả",
+        "description": "Trà đào cam sả là sự kết hợp hoàn hảo giữa vị ngọt của đào, vị chua thanh của cam và hương thơm đặc trưng của sả. Thức uống này không chỉ ngon miệng mà còn rất tốt cho sức khỏe.",
+        "short_description":"Trà đào cam sả là sự kết hợp hoàn hảo giữa vị ngọt của đào, vị chua thanh của cam và hương thơm đặc trưng của sả.",
+        "price":40000 ,
+        "popular": "Hot ",
+        "size": {
+            "M":40000 ,
+            "L": 45000
+        },
+        "Ingredient": ["Trà xanh", "Đào tươi","Cam tươi","Sả tươi","Mật ong","Đá viên"],
+        "image":"./assets/OIP.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Matcha đá xay",
+        "description": "Matcha đá xay là sự kết hợp hoàn hảo giữa bột matcha Nhật Bản hảo hạng, sữa tươi và kem tươi. Thức uống mát lạnh này mang đến hương vị đắng nhẹ của matcha hòa quyện với vị béo ngậy của sữa và kem.",
+        "short_description":"Matcha đá xay là sự kết hợp hoàn hảo giữa bột matcha Nhật Bản hảo hạng, sữa tươi và kem tươi.",
+        "price":55000 ,
+        "popular": "New ",
+        "size": {
+            "M":55000 ,
+            "L": 60000
+        },
+        "Ingredient": ["Bột matcha Nhật Bản", "Sữa tươi","Kem tươi","Đường","Đá viên"],
+        "image":"./assets/OIP (1).jpg"
+    },
+    {
+        "id": 4,
+        "name": "Cookie đá xay",
+        "description": "Cookie đá xay là sự kết hợp hoàn hảo giữa bánh cookie giòn tan, sữa tươi béo ngậy và kem tươi. Thức uống mát lạnh này mang đến hương vị ngọt ngào của cookie hòa quyện với vị béo ngậy của sữa và kem, tạo nên một trải nghiệm thưởng thức độc đáo.",
+        "short_description":"Cookie đá xay là sự kết hợp hoàn hảo giữa bánh cookie giòn tan, sữa tươi béo ngậy và kem tươi.",
+        "price":50000 ,
+        "popular": "Popular",
+        "size": {
+            "M":50000 ,
+            "L": 55000
+        },
+        "Ingredient": ["Bánh cookie", "Sữa tươi","Kem tươi","Đường","Đá viên","Socola chip"],
+        "image":"./assets/OIP (2).jpg"
+    }
+]

@@ -1,92 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Đăng ký - PocoPoco Tea</title>
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/auth.css" />
-    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
-    <!-- Thêm phần này vào ngay sau thẻ <body> trong cả hai file -->
-<div class="navbar">
-  <a href="./index.html" class="logo">
-    <span>Poco<span style="color: var(--red)">Poco</span> Tea</span>
-  </a>
-  
-  <div class="nav-menu">
-    <ul class="menu-list">
-      <li><a href="./index.html">TRANG CHỦ</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle">THỰC ĐƠN <i class="fa-solid fa-caret-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">TRÀ SỮA</a></li>
-          <li><a href="#">TRÀ TRÁI CÂY</a></li>
-          <li><a href="#">ĐỒ ĂN VẶT</a></li>
-          <li><a href="#">TOPPING</a></li>
+    <div class="bubbles">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+
+    <nav class="navbar">
+      <a href="./index.html" class="logo">
+        <span>Poco<span style="color: var(--red)">Poco</span> Tea</span>
+      </a>
+      
+      <div class="nav-menu">
+        <ul class="menu-list">
+          <li><a href="./index.html">TRANG CHỦ</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">THỰC ĐƠN <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="trasua.html">TRÀ SỮA</a></li>
+              <li><a href="tratraicay.html">TRÀ TRÁI CÂY</a></li>
+              <li><a href="doanvat.html">ĐỒ ĂN VẶT</a></li>
+              <li><a href="topping.html">TOPPING</a></li>
+            </ul>
+          </li>
+          <li><a href="#">KHUYẾN MÃI</a></li>
+          <li><a href="#">CỬA HÀNG</a></li>
+          <li><a href="#">LIÊN HỆ</a></li>
         </ul>
-      </li>
-      <li><a href="#">KHUYẾN MÃI</a></li>
-      <li><a href="#">CỬA HÀNG</a></li>
-      <li><a href="#">LIÊN HỆ</a></li>
-    </ul>
-  </div>
+      </div>
+  
+      <div class="nav-right">
+        <div class="search-box">
+          <input type="text" placeholder="Tìm kiếm sản phẩm...">
+          <a href="./search.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+        <div class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count">0</span>
+        </div>
+        <div class="auth-buttons">
+          <a href="./login.html" class="login-btn">
+            <i class="fa-solid fa-user"></i>
+            Đăng nhập
+          </a>
+          <a href="./register.html" class="register-btn active">
+            <i class="fa-solid fa-user-plus"></i>
+            Đăng ký
+          </a>
+        </div>
+      </div>
+    </nav>
 
-  <div class="nav-right">
-    <div class="search-box">
-      <input type="text" placeholder="Tìm kiếm sản phẩm...">
-      <a href="./search.html">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </a>
-    </div>
-    <div class="cart-icon">
-      <i class="fa-solid fa-cart-shopping"></i>
-      <span class="cart-count">0</span>
-    </div>
-    <div class="auth-buttons">
-      <a href="./login.html" class="login-btn">
-          <i class="fa-solid fa-user"></i>
-          Đăng nhập
-      </a>
-      <a href="./register.html" class="register-btn">
-          <i class="fa-solid fa-user-plus"></i>
-          Đăng ký
-      </a>
-    </div>
-  </div>
-</div>
-    <div class="form-wrapper">
-      <!-- Câu lệnh hiển thị Heading 2 -->
-      <h2>Sign Up</h2>
-      <form action="#">
-        <div class="form-control">
-          <input id="username" type="text" required/>
-          <label>Username</label>
+    <div class="auth-container">
+      <div class="auth-box">
+        <div class="auth-header">
+          <h2>Đăng ký</h2>
+          <p>Tham gia cùng PocoPoco Tea ngay hôm nay!</p>
         </div>
-        <div class="form-control">
-          <input id="email" type="text" required />
-          <label>Email address</label>
-        </div>
-        <div class="form-control">
-          <input id="password" type="password" required />
-          <label>Password</label>
-        </div>
-        <div class="form-control">
-          <input id="confirm-password" type="password" required />
-          <label>Confirm-password</label>
-        </div>
-        <button type="submit" id="signup">Sign Up</button>
-        <div class="form-help">
-          <div class="remember-me">
-            <input type="checkbox" id="remember-me" />
-            <label for="remember-me">Remember me</label>
+        <form id="register-form" class="auth-form">
+          <div class="form-group">
+            <label for="username">Tên đăng nhập</label>
+            <div class="input-group">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" required>
+            </div>
           </div>
-          <a href="#">Need help?</a>
-        </div>
-      </form>
-      <p>Already have an account? <a href="./login.html">Sign in now</a></p>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <div class="input-group">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="email" name="email" placeholder="Nhập email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <div class="input-group">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+              <i class="fa-solid fa-eye-slash toggle-password"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Xác nhận mật khẩu</label>
+            <div class="input-group">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="confirm-password" name="confirm-password" placeholder="Nhập lại mật khẩu" required>
+              <i class="fa-solid fa-eye-slash toggle-password"></i>
+            </div>
+          </div>
+          <button type="submit" id="signup" class="auth-btn">Đăng ký</button>
+          <div class="auth-footer">
+            <p style="color: black;">Đã có tài khoản? <a href="login.html">Đăng nhập ngay</a></p>
+          </div>
+        </form>
+      </div>
     </div>
-
     <script src="./js/register.js"></script>
   </body>
 </html>

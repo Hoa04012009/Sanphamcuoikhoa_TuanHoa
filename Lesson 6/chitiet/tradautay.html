@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết Trà Dâu Tây - PocoPoco Tea</title>
+    <link rel="shortcut icon" href="../SS6/assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="../SS6/styles/main.css" />
+    <link rel="stylesheet" href="chitiet.css">
+    <link rel="stylesheet" href="../SS6/styles/home.css" />
+    <link rel="stylesheet" href="../SS6/styles/trasua.css">
+</head>
+<body>
+    <!-- Navbar giống các trang khác -->
+    <div class="navbar">
+        <a href="../SS6/index.html" class="logo">
+            <span>Poco<span style="color: var(--red)">Poco</span> Tea</span>
+        </a>
+        
+        <div class="nav-menu">
+            <ul class="menu-list">
+                <li><a href="../SS6/index.html">TRANG CHỦ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">THỰC ĐƠN <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../SS6/trasua.html">TRÀ SỮA</a></li>
+                        <li><a href="../SS6/tratraicay.html">TRÀ TRÁI CÂY</a></li>
+                        <li><a href="../SS6/doanvat.html">ĐỒ ĂN VẶT</a></li>
+                        <li><a href="../SS6/topping.html">TOPPING</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">KHUYẾN MÃI</a></li>
+                <li><a href="#">CỬA HÀNG</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <a href="../SS6/search.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="auth-buttons">
+                <a href="../SS6/login.html" class="login-btn">
+                    <i class="fa-solid fa-user"></i>
+                    Đăng nhập
+                </a>
+                <a href="../SS6/register.html" class="register-btn">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Đăng ký
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main class="product-detail">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../SS6/assets/download (1).jpg" alt="Trà dâu tây" class="product-image-large">
+            </div>
+            <div class="product-info-detail">
+                <h1 class="product-title">Trà dâu tây</h1>
+                <p class="product-price">45.000đ</p>
+                <p class="product-description">
+                    Trà dâu tây là sự kết hợp hoàn hảo giữa vị ngọt thanh của dâu tây tươi 
+                    và hương thơm đặc trưng của trà hoa quả. Thức uống này không chỉ có màu sắc 
+                    bắt mắt mà còn mang đến hương vị thơm ngon, khó quên.
+                </p>
+
+                <div class="size-options">
+                    <h3>Kích thước</h3>
+                    <div class="size-grid">
+                        <div class="size-item selected">
+                            <div class="size-name">M</div>
+                            <div class="size-price">45.000đ</div>
+                        </div>
+                        <div class="size-item">
+                            <div class="size-name">L</div>
+                            <div class="size-price">50.000đ</div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="ingredients-list">
+                    <h3>Thành phần</h3>
+                    <ul>
+                        <li>Trà hoa quả</li>
+                        <li>Dâu tây tươi</li>
+                        <li>Đường</li>
+                        <li>Mật ong</li>
+                        <li>Lá bạc hà</li>
+                    </ul>
+                </div>
+
+                
+                <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Thêm vào giỏ hàng
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="chitiet.js"></script>
+</html>
